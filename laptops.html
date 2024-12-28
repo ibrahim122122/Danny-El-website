@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="French">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danny Store - Laptops</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #008000;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .web-logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        .store-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #008000;
+        }
+
+        .main-section {
+            padding: 20px;
+        }
+
+        .laptops-title {
+            text-align: center;
+            font-size: 32px;
+            color: #006600;
+            margin-bottom: 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusted min-width */
+            gap: 20px;
+        }
+
+        .product-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px; /* Reduced padding */
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .product-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px; /* Reduced margin */
+        }
+
+        .product-name {
+            font-size: 18px; /* Reduced font size */
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px; /* Reduced margin */
+        }
+
+        .product-price {
+            font-size: 16px; /* Reduced font size */
+            color: #008000;
+            margin-bottom: 8px; /* Reduced margin */
+        }
+
+        .product-details {
+            font-size: 12px; /* Reduced font size */
+            color: #666;
+            margin-bottom: 10px; /* Reduced margin */
+        }
+
+        .availability {
+            color: #005700;
+            font-weight: bold;
+            margin-bottom: 8px; /* Reduced margin */
+        }
+
+        .rating {
+            color: #ff9900;
+            margin-bottom: 8px; /* Reduced margin */
+        }
+
+        .rating i {
+            font-size: 14px; /* Reduced font size */
+        }
+
+        .buy-button {
+            background-color: #006600;
+            color: white;
+            border: none;
+            padding: 8px 12px; /* Reduced padding */
+            border-radius: 5px;
+            font-size: 14px; /* Reduced font size */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #004d00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Danny Store Logo" class="web-logo">
+            <div class="store-name">Danny Store</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="laptop">Laptops</a></li>
+                <li><a href="#">Stands</a></li>
+                <li><a href="#">Bags</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-section">
+        <h1 class="laptops-title">Our Laptops</h1>
+        <div class="product-grid">
+            <!-- Laptop 1 -->
+            <div class="product-box">
+                <img src="Screenshot_20241227-054237.png" alt="HP ProBook Laptop" class="product-image">
+                <h2 class="product-name">HP ProBook Laptop</h2>
+                <p class="product-price">500,000 RWF</p>
+                <p class="product-details">Powerful and portable with 8GB RAM, 256GB SSD, and Intel Core i5 processor.</p>
+                <p class="availability">In Stock</p>
+                <p class="rating">★★★★★</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <!-- Laptop 2 -->
+            <div class="product-box">
+                <img src="Screenshot_20241227-054256.png" alt="Dell Inspiron Laptop" class="product-image">
+                <h2 class="product-name">Dell Inspiron Laptop</h2>
+                <p class="product-price">450,000 RWF</p>
+                <p class="product-details">Reliable performance with 4GB RAM, 128GB SSD, and Intel Core i3 processor.</p>
+                <p class="availability">In Stock</p>
+                <p class="rating">★★★★☆</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <!-- Laptop 3 -->
+            <div class="product-box">
+                <img src="Screenshot_20241227-054322.png" alt="MacBook Pro" class="product-image">
+                <h2 class="product-name">MacBook Pro</h2>
+                <p class="product-price">1,200,000 RWF</p>
+                <p class="product-details">Premium laptop with 16GB RAM, 512GB SSD, and M1 Chip.</p>
+                <p class="availability">Limited Stock</p>
+                <p class="rating">★★★★★</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <!-- Additional Laptop Boxes -->
+            <!-- You can duplicate the above structure and change the content for more products -->
+        </div>
+    </section>
+</body>
+</html>
